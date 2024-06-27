@@ -7,7 +7,7 @@ import {
   Typography,
   Container,
 } from "@mui/material";
-
+import "./sign-in.css"
 const Index = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -51,7 +51,10 @@ const Index = () => {
                   onChange={(e) => setPassword(e.target.value)}
                   sx={{ mt: 2, mb: 2  }}
                 />
-          <Link href="/sign-up">Register here</Link>
+                <div className="link">
+                <Link href="/sign-up">Register here</Link>
+                <Link href="/forgot-password">Forgot password</Link>
+                </div>
           <Button
             type="submit"
             fullWidth
